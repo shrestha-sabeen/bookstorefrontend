@@ -9,22 +9,23 @@ import AddBook from "./components/AddBook";
 import BookDetail from "./components/Book/BookDetail"
 
 function App() {
-    return <HashRouter>
+    return (
+        <HashRouter>
+            <header>
+                <Header />
+            </header>
+            <main>
+                <Routes>
+                    <Route path="/" element={<Home />} exact />
+                    <Route path="/add" element={<AddBook />} exact />
+                    <Route path="/books" element={<Books />} exact />
+                    <Route path="/about" element={<About />} exact />
+                    <Route path="/books/:id" element={<BookDetail />} exact />
 
-        <header>
-            <Header />
-        </header>
-        <main>
-            <Routes>
-                <Route path="/" element={<Home />} exact />
-                <Route path="/add" element={<AddBook />} exact />
-                <Route path="/books" element={<Books />} exact />
-                <Route path="/about" element={<About />} exact />
-                <Route path="/books/:id" element={<BookDetail />} exact />
-
-            </Routes>
-        </main>
-    </HashRouter>
+                </Routes>
+            </main>
+        </HashRouter>
+    )
 
 }
 
