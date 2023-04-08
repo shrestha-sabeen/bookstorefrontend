@@ -1,0 +1,80 @@
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+li {
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    width: 250px;
+    max-width: 250px;
+    max-height: 400px;
+    margin: 50px;
+}
+
+.bookcard {
+    margin: auto;
+    padding: 10px;
+    height: 500px;
+    align-items: center;
+    width: 300px;
+}
+
+
+.bookcard img {
+    width: 100%;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.bookcard h3 {
+    font-size: 22px;
+    font-family: 'Viga', sans-serif;
+    text-transform: capitalize;
+    line-height: 40px;
+}
+
+.bookcard h2 {
+    font-size: 20px;
+    font-family: 'Viga', sans-serif;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+.bookcard p {
+    font-size: 16px;
+    font-family: 'Viga', sans-serif;
+    color: #666;
+}
+
+
+
+.bookcard article {
+    font-size: 16px;
+    font-family: 'Viga', sans-serif;
+    color: #3333cc;
+    margin-top: 10px;
+}
+
+.bookcard .updatebottom {
+    background: #00cc66;
+    display: inline-block;
+    padding: 10px 20px;
+    font-style: 18px;
+    margin: 10px;
+    color: #ff6600;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.bookcard .deletebottom {
+    background: #ff6600;
+    display: inline-block;
+    padding: 10px 20px;
+    font-style: 18px;
+    margin: 10px;
+    color: #000;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
