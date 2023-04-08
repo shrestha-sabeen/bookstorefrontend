@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./components/Header";
-import { Route, Routes } from "react-router-dom";
+import { HashRouter Route, Routes } from "react-router-dom";
 
 import Home from "./components/Home";
 import About from "./components/About";
@@ -9,7 +9,8 @@ import AddBook from "./components/AddBook";
 import BookDetail from "./components/Book/BookDetail"
 
 function App() {
-    return <React.Fragment>
+    return <HashRouter>
+
         <header>
             <Header />
         </header>
@@ -23,7 +24,7 @@ function App() {
 
             </Routes>
         </main>
-    </React.Fragment>
+    </HashRouter>
 
 }
 
